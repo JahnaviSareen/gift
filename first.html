@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="birthday">
+        <h1>Happyy Birthdayy Meri Cutiee Patootie❤️</h1>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Vanshde</title>
+<link rel="icon" type="image/png" href="images/cake2.png">
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Birthday Card */
+
+.birthday{
+    background:white;
+    padding:40px 60px;
+    border-radius:34px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:left;
+    position:relative;
+}
+
+/* Glowing Heading */
+
+.birthday h1{
+    font-size:38px;
+    color:#ff4081;
+    font-weight: 800;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #ff9ecbd4;
+    }
+    to{
+        text-shadow:0 0 25px #cf14528c;
+    }
+}
+
+/* Balloons */
+
+.balloon{
+    position:absolute;
+    width:40px;
+    height:50px;
+    border-radius:50%;
+    animation: float 5s infinite ease-in-out;
+}
+
+.balloon1{
+    background:#ff4d6d;
+    left:-30px;
+    top:50px;
+}
+
+.balloon2{
+    background:#4dabf7;
+    right:-30px;
+    top:80px;
+}
+
+.balloon3{
+    background:#ffd43b;
+    left:50%;
+    top:-40px;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0);}
+}
+
+.gif img{
+    width: 280px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+/* Button */
+
+.btn button{
+    padding: 18px 25px;
+    border: none;
+    border-radius: 12px;
+    background: #ff4081;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+.btn button:hover{
+    background:#ff1c6c;
+}
+
+.cursor{
+    width:35px;
+    height:35px;
+    border:4px solid #7e7fafb3;
+    border-radius:50%;
+    position:fixed;
+    pointer-events:none;
+    transform:translate(-50%, -50%);
+    z-index:9999;
+}
+
+</style>
+</head>
+
+<body>
+<div class="cursor"></div>
+
+<div class="birthday">
+
+<div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+<div class="balloon balloon3"></div>
+
+<h1>Happyy Birthdayy Meri Cutiee Patootie❤️</h1>
+
+</div>
+<div class="gif">
+    <img src="images/hb.gif" alt="birthday gif">
+</div>
+
+<!-- Button below the gif -->
+<div class="btn">
+    <a href="next.html">
+        <button>Click to go on Next 🎁</button>
+    </a>
+</div>
+<script src="loader.js"></script>
+</body>
+</html>

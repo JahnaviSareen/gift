@@ -22,41 +22,55 @@ body{
 
 h1{
     margin-bottom:30px;
-    color:#444;
+    font-family: cursive;
+    font-size: 40px;
 }
 
 /* video container */
 
 .video-box{
     background:white;
-    padding:20px;
-    border-radius:20px;
+    padding:8px;
+    border-radius:8px;
     box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 /* video */
 
 video{
-    width:700px;
+    width:900px;
     max-width:90vw;
-    border-radius:15px;
+    border-radius:6px;
+}
+
+.cursor{
+    width:35px;
+    height:35px;
+    border:4px solid #7e7fafb3;
+    border-radius:50%;
+    position:fixed;
+    pointer-events:none;
+    transform:translate(-50%, -50%);
+    z-index:9999;
 }
 
 </style>
 </head>
 
 <body>
+    <div class="cursor"></div>
 
-<h1>A Special Message For You ❤️</h1>
+<h1>Chotu sa Video🫰🏻</h1>
 
 <div class="video-box">
 
 <video controls>
-    <source src="videos/message.mp4" type="video/mp4">
+    <source src="main_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
 </div>
+<script src="loader.js"></script>
 
 </body>
 </html>

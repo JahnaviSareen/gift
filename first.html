@@ -1,16 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Birthday Page</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <div class="birthday">
-        <h1>Happyy Birthdayy Meri Cutiee Patootie❤️</h1>
-    </div>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +14,13 @@ body{
     align-items:center;
     background:linear-gradient(135deg,#ff9a9e,#fad0c4);
     font-family:Arial, Helvetica, sans-serif;
-    display:flex;
-    flex-direction:column;
+}
+
+/* Center container */
+
+.container{
+    position:relative;
+    text-align:center;
 }
 
 /* Birthday Card */
@@ -36,19 +28,19 @@ body{
 .birthday{
     background:white;
     padding:40px 60px;
-    border-radius:34px;
+    border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
-    text-align:left;
     position:relative;
 }
 
 /* Glowing Heading */
 
 .birthday h1{
-    font-size:38px;
+    font-size:40px;
     color:#ff4081;
-    font-weight: 800;
+    /* font-weight:800; */
     animation: glow 2s infinite alternate;
+    font-family: cursive;
 }
 
 @keyframes glow{
@@ -94,25 +86,48 @@ body{
     100%{transform:translateY(0);}
 }
 
+/* Top Left GIF */
+
+.gif{
+    position:absolute;
+    top: -140px;
+    left: -280px;
+}
+
 .gif img{
-    width: 280px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border-radius: 15px;
+    width:220px;
+    border-radius:15px;
+}
+
+/* Bottom Right GIF */
+
+.gif2{
+    position:absolute;
+    bottom: -128px;
+    right: -284px;
+}
+
+.gif2 img{
+    width:220px;
+    border-radius:15px;
 }
 
 /* Button */
 
+.btn{
+    margin-top:20px;
+}
+
 .btn button{
-    padding: 18px 25px;
-    border: none;
-    border-radius: 12px;
-    background: #ff4081;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: cursive;
-    font-weight: 600;
+    padding:18px 25px;
+    border:none;
+    border-radius:12px;
+    background:#ff4081;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    font-family:cursive;
+    font-weight:600;
 }
 
 .btn button:hover{
@@ -130,11 +145,21 @@ body{
     z-index:9999;
 }
 
+
+
 </style>
 </head>
 
 <body>
+
 <div class="cursor"></div>
+
+<div class="container">
+
+<!-- Top Left GIF -->
+<div class="gif">
+    <img src="firstgif.gif" alt="birthday gif">
+</div>
 
 <div class="birthday">
 
@@ -142,20 +167,23 @@ body{
 <div class="balloon balloon2"></div>
 <div class="balloon balloon3"></div>
 
-<h1>Happyy Birthdayy Meri Cutiee Patootie❤️</h1>
+<h1>Happyy Birthdayy <br>Meri Cutiee Patootie❤️</h1>
 
-</div>
-<div class="gif">
-    <img src="hb.gif" alt="birthday gif">
-</div>
-
-<!-- Button below the gif -->
 <div class="btn">
     <a href="next.html">
         <button>Click to go on Next 🎁</button>
     </a>
 </div>
+
+</div>
+
+<!-- Bottom Right GIF -->
+<div class="gif2">
+    <img src="hb.gif" alt="birthday gif">
+</div>
+
+</div>
+
 <script src="loader.js"></script>
 </body>
-
 </html>
